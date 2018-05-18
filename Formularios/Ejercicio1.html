@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Ejercicio 1</title>
+
+  <style type="text/css">
+    h1 {
+      color: rgb(65, 179, 231);
+      font: bold;
+    }
+
+    td {
+      padding: 0.2em 2em;
+    }
+
+    p { width: 30%; border-bottom: solid 1px; padding-bottom: 10px;}
+
+    body { border: solid 1px; padding: 20px;}
+
+  </style>
+
+</head>
+
+<body>
+  <h1>Elementos de entrada</h1>
+  <form action="ejercicio1.php" method="post" />
+
+  <h3>Elementos de tipo INPUT</h3>
+  <h4>TEXT</h4>
+  <p>Introduzca la cadena a buscar: <input type="text" name="cadena" />
+
+    <h4>RADIO</h4>
+    <p>Sexo:
+      <input type="radio" name="sexo" value="mujer" /> Mujer
+      <input type="radio" name="sexo" value="hombre" /> Hombre
+    </p>
+
+    <h4>CHECKBOX</h4>
+    <p>Extras:
+      <input type="checkbox" name="lugar[]" value="garaje" checked="checked" /> Garaje
+      <input type="checkbox" name="lugar[]" value="piscina"/> Piscina
+      <input type="checkbox" name="lugar[]" value="jardin"/> Jardín
+    </p>
+
+    <h4>PASSWORD</h4>
+    <p>Contraseña:
+      <input type="password" name="password" />
+    </p>
+
+    <h3>Elemento SELECT</h3>
+
+    <h4>SELECT SIMPLE</h4>
+    <p>Color:
+      <select name='color'>
+   <option value="rojo">rojo</option>
+   <option value="verde">verde</option>
+   <option value="azul">azul</option>
+ </select>
+    </p>
+
+    <h4>SELECT MÚLTIPLE</h4>
+    <p>Idiomas:
+    <select multiple name='idioma[]'>
+     <option value="ingles" selected="selected">Inglés</option>
+     <option value="frances">Francés</option>
+     <option value="Aleman">Alemán</option>
+    </p>
+    </select>
+
+    <h3>Elemento TEXTAREA</h3>
+
+    <p>Comentario:
+      <textarea name="comentario" rows="5" cols="50">Este libro me parece...</textarea>
+    </p>
+    </select>
+
+    <p><input type="submit" value="Comprobar el formulario">
+     <input type="reset" value="borrar todo"></p>
+
+
+    </form>
+</body>
+
+</html>

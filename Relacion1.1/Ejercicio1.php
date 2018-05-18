@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Ejercicio1</title>
+ </head>
+ <body>
+  
+	<?php
+
+	/*Obtenga un programa que muestre en pantalla la información correspondiente a la tabla
+	de multiplicar de un número, con la visualización habitual de la misma.*/
+
+	function tablaMultiplicar($n){
+		$i=1;
+		echo "<h3>Tabla del $n</h3>";
+		while ($i<=10) {
+			echo "$n x $i = ".$n*$i."<br/>";
+			$i++;
+        } 
+	}
+
+	tablaMultiplicar(7);
+
+	?>
+
+ </body>
+</html>

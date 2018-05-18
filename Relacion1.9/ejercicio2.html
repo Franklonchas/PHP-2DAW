@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Ejercicio 1</title>
+  <style media="screen">
+
+    form {
+      border: 1px solid;
+    }
+
+    #contenedor {
+      color:red;
+    }
+
+    td {
+      padding: 5px;
+    }
+
+    h1 {
+      color: rgb(31, 117, 196);
+    }
+
+    #oculto {
+      padding: 0%;
+      visibility: hidden;
+    }
+
+  </style>
+</head>
+
+<body>
+  <h1>Formulario simple</h1>
+  <h2>Búsqueda de canciones</h2>
+
+  <form method="post" action="ejercicio2.php" enctype="multipart/form-data">
+    <table>
+      <tr>
+        <td>Texto a buscar: </td>
+        <td><input type="text" name="titulo" /></td>
+      </tr>
+    </table>
+    <table>
+      <td id="contenedor"></td>
+    </table>
+    <table>
+      <tr>
+        <td>Buscar en: </td>
+        <td><input type="radio" id="titulo"
+           name="contact" value="titulo">
+          <label for="titulo">Títulos de canción</label>
+        </td>
+        <td><input type="radio" id="album"
+           name="contact" value="album">
+          <label for="album">Nombres de álbum</label>
+        </td>
+        <td><input type="radio" id="ambos"
+           name="contact" value="ambos">
+          <label for="contactChoice3">Ambos campos</label></td>
+      </tr>
+      <tr>
+        <td>Género musical: </td>
+        <td><select name="genero">
+              <option value="Todos">Todos</option>
+              <option value="Acústica">Acústica</option>
+              <option value="Banda Sonora">Banda Sonora</option>
+              <option value="Electrónica">Electrónica</option>
+              <option value="Folk">Folk</option>
+              <option value="Jazz">Jazz</option>
+              <option value="New Age">New Age</option>
+              <option value="Pop">Pop</option>
+              <option value="Rock">Rock</option>
+
+            </select>
+        </td>
+      </tr>
+      <tr>
+        <td><input type="submit" value="Buscar"></td>
+      </tr>
+    </table>
+  </form>
+
+</body>
+
+</html>

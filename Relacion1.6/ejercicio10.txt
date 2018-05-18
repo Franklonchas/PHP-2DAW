@@ -1,0 +1,22 @@
+Sintaxis de PHP printf()
+La sintaxis de printf() es la siguiente:
+
+$longitud printf($formato, $argumento1, $argumento2 ...)
+
+Esta función escapa una cadena con un formato determinado, los parámetros de esta función son:
+
+$longitud: Es la longitud de la cadena devuelta, este resultado lo devuelve por defecto la función.
+$formato (obligatorio): Formato en el que será devuelto el argumento pasado.
+$argumento1 (obligatorio) $argumento2 … (opcionales): Son los valores que queremos formatear.
+
+
+Ejemplo:
+
+//sacar el valor de 50 en hezadecimal
+$number = 50;
+printf("%x", $number);
+
+//sacando decimales
+$cifra = 50.40;
+printf("Sacando 1 decimal: %1\$.1f", $cifra);
+printf("Sacando 2 decimales: %1\$.2f", $cifra);

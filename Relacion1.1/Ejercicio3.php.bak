@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Ejercicio3</title>
+ </head>
+ <body>
+  
+	<?php
+
+	/*Igual al ejercicio anterior, pero coloreando las filas alternando gris y blanco. Además, el
+		tamaño será una constante: define(TAM, 10).*/
+
+	function tablaColores() {
+		$numero = 1;
+		echo "<table bgcolor='white'>";
+		for ($i=1; $i<11; $i++) {
+			if ($i%2 == 0) {
+				echo "<tr bgcolor='grey'>";
+			}
+			else{
+				echo "<tr bgcolor='white'>";
+			}
+			for ($j=1; $j<11; $j++) {
+				echo "<td>$numero</td>";
+				$numero++;
+			}
+		}
+		echo "</tr>";
+		echo "</table>";
+	}
+
+	tablaColores();
+
+	?>
+
+ </body>
+</html>
